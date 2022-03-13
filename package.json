@@ -1,0 +1,32 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "A project for practicing the usage of npm and webpack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donperger/restaurant-page.git"
+  },
+  "keywords": [
+    "the",
+    "odin",
+    "project",
+    "restaurant",
+    "page",
+    "webpack",
+    "npm"
+  ],
+  "author": "donperger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donperger/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/donperger/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
