@@ -6,7 +6,7 @@ function createContent() {
     contentDiv.appendChild(img);
 
     const header = document.createElement("h1");
-    header.textContent = 'Restaurant for humans and their best friend';
+    header.textContent = 'Restaurant for humans and their best friends';
     contentDiv.appendChild(header);
 
     const description = document.createElement("div");
@@ -14,4 +14,4 @@ function createContent() {
     contentDiv.appendChild(description);
 }
 
-export default createContent
+export default createContent;
