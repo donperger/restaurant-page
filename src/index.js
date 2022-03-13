@@ -1,1 +1,3 @@
-console.log("Hello from index.js")
+import createContent from "./contentCreator";
+
+createContent();
