@@ -1,9 +1,12 @@
 function createContent() {
     const contentDiv = document.getElementById("content");
 
+    const imgContainer = document.createElement("div");
+    imgContainer.classList.add("img-container");
     const img = document.createElement("img");
     img.src = '../img/karsten-winegeart-qy0BHykaq0E-unsplash (1).jpg';
-    contentDiv.appendChild(img);
+    imgContainer.appendChild(img);
+    contentDiv.appendChild(imgContainer);
 
     const header = document.createElement("h1");
     header.textContent = 'Restaurant for humans and their best friends';
