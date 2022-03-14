@@ -1,8 +1,11 @@
 :root {
-    --bg-color: #272727;
+    --bg-color: #6b5e5e;
     --border-color: #747474;
     --first-font-color: rgb(255, 255, 255);
     --second-font-color: #ff652f;
+    --header-height: 10vh;
+    --header-color: #272727;
+    --footer-height: 5vh;
 }
 
 body {
@@ -13,6 +16,16 @@ body {
 }
 
 /*navigation*/
+
+.header-container {
+    width: 100%;
+    height: var(--header-height);
+    background-color: var(--header-color);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top:0
+}
 
 .nav-bar {
     width: 100%;
@@ -44,15 +57,74 @@ body {
     position: relative;
     bottom: .1rem;
 }
-/*home page*/
+
+.frenchie-icon{
+    height: calc( var(--header-height) - .4rem);
+    margin: .2rem 1rem;
+}
+
+/* content*/
+
+#content {
+    box-sizing: border-box;
+    padding-top: calc( var(--header-height) + 1rem);
+    padding-bottom: calc(var(--footer-height) + 1rem);
+}
+
+.main-title {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Gochi Hand', cursive;
+}
 
 .img-container {
     display: grid;
     place-items: center;
+    margin-bottom: 2rem;
 }
 
-img {
-    width: 50%;
+.main-cover {
+    width: 35%;
     border: 1px solid var(--border-color);
     border-radius: 2rem;
+}
+
+.description-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    width: 50%;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.2rem;
+}
+/*footer*/
+
+.footer-container {
+    height: var(--footer-height);
+    background-color: var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5 1rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.github-link {
+    margin: 0 .5rem;
+}
+
+.footer-container,
+.github-link {
+    color: var(--first-font-color);
+}
+
+.github-icon {
+    height: 5vh;
 }
