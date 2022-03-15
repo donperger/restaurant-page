@@ -58,10 +58,11 @@ function loadMenu () {
             const description = document.getElementById(`info-${index}`);
             description.style.display = "block";
         });
+
         humanDish.addEventListener("mouseleave", () => {
             const description = document.getElementById(`info-${index}`);
             description.style.display = "none";
-        })
+        });
 
         humanDish.appendChild(humanDishInfo);
 
@@ -94,10 +95,11 @@ function loadMenu () {
             const description = document.getElementById(`dog-info-${index}`);
             description.style.display = "block";
         });
+
         dogDish.addEventListener("mouseleave", () => {
             const description = document.getElementById(`dog-info-${index}`);
             description.style.display = "none";
-        })
+        });
 
         dogDish.appendChild(dogDishInfo);
 
