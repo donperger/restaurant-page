@@ -1,5 +1,6 @@
 import createContent from "./contentCreator";
 import loadMenu from "./menuModule";
+import loadContact from "./contactModule";
 
 const contentDiv = document.getElementById("content");
 
@@ -9,7 +10,7 @@ const contactBtn = document.getElementById("contact-btn");
 
 homeBtn.addEventListener("click", navigateToHome);
 menuBtn.addEventListener("click", navigateToMenu);
-contactBtn.addEventListener("click", () => console.log("contact button"));
+contactBtn.addEventListener("click", navigateToContact);
 
 createContent();
 
@@ -21,4 +22,9 @@ function navigateToHome() {
 function navigateToMenu() {
     contentDiv.innerText = "";
     loadMenu();
+}
+
+function navigateToContact() {
+    contentDiv.innerText = "";
+    loadContact();
 }
