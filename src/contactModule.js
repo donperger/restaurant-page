@@ -45,6 +45,12 @@ function createForm() {
 
     fieldSet.appendChild(legend);
 
+    const requiredDiv = document.createElement("div");
+    requiredDiv.classList.add("required-title");
+    requiredDiv.textContent = "*required";
+
+    fieldSet.appendChild(requiredDiv);
+
     const fullNameContainer = document.createElement("div");
     fullNameContainer.classList.add("full-name-container", "input-container");
 
