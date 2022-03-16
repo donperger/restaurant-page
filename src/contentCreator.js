@@ -1,3 +1,5 @@
+import cover from "../src/img/karsten-winegeart-qy0BHykaq0E-unsplash (1).jpg";
+
 function createContent() {
     const contentDiv = document.getElementById("content");
 
@@ -8,11 +10,12 @@ function createContent() {
 
     const imgContainer = document.createElement("div");
     imgContainer.classList.add("img-container");
-    const img = document.createElement("img");
-    img.classList.add("main-cover")
+    const img = new Image();
+    img.src = cover;
+    img.classList.add("main-cover");
 
-    img.src = '../img/karsten-winegeart-qy0BHykaq0E-unsplash (1).jpg';
     imgContainer.appendChild(img);
+
     contentDiv.appendChild(imgContainer);
 
     const descriptionContainer = document.createElement("div");
