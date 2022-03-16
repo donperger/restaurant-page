@@ -1,7 +1,7 @@
 import createContent from "./contentCreator";
 import loadMenu from "./menuModule";
 import loadContact from "./contactModule";
-import './contact.css';
+import 'contact.css';
 import './home.css';
 import './menu.css';
 
