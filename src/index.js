@@ -1,9 +1,6 @@
-import createContent from "./contentCreator";
+import createContent from "./contentCreator"
 import loadMenu from "./menuModule";
 import loadContact from "./contactModule";
-import 'contact.css';
-import './home.css';
-import './menu.css';
 
 const contentDiv = document.getElementById("content");
 
