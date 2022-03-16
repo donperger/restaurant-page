@@ -1,4 +1,4 @@
-import cover from "./423195d062e97d64eb88.jpg";
+import cover from "../src/img/karsten-winegeart-qy0BHykaq0E-unsplash (1).jpg";
 
 function createContent() {
     const contentDiv = document.getElementById("content");
