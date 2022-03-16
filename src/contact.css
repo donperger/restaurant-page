@@ -47,6 +47,13 @@ fieldset {
     align-items: center;
 }
 
+.required-title {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 1rem;
+}
+
 legend {
     position: absolute;
     top: 0;
